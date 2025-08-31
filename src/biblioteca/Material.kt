@@ -1,19 +1,19 @@
 package biblioteca
 
-// Clase abstracta
+// Clase abstracta base
 abstract class Material(
     open val id: String,
     open var titulo: String
 ) {
     abstract val tipo: String
 
-    // Setter validado
+    // Setter validado: no permite páginas negativas
     open var paginas: Int = 0
         set(value) {
             field = if (value < 0) 0 else value
         }
 
-    // Getter calculado
+    // Getter calculado: define si el material es grueso
     val esGrueso: Boolean
         get() = paginas > 300
 
@@ -23,5 +23,8 @@ abstract class Material(
 
     open fun mostrarInfo() {
         println("[$tipo] $titulo ($paginas páginas)")
+        if (esGrueso) {
+            println("Este material es grueso.")
+        }
     }
 }

@@ -1,6 +1,6 @@
 package biblioteca
 
-// Interfaz
+// Interfaz con acción común
 interface AccionLectura {
     fun leer()
 }

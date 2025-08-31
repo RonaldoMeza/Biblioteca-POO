@@ -1,20 +1,19 @@
 # 📚 Ejemplo POO en Kotlin: Biblioteca
 
-Este proyecto es un ejemplo sencillo en Kotlin que integra los conceptos trabajados en el laboratorio de Programación Orientada a Objetos (POO).  
-Se modela una **biblioteca** con materiales como **Libros** y **Revistas**, aplicando clases, herencia, interfaces, getters y setters.
+Este proyecto es un ejemplo sencillo en Kotlin que simula una **biblioteca** con materiales de lectura como **Libros** y **Revistas**.  
+El objetivo es aplicar los conceptos vistos en el laboratorio de Programación Orientada a Objetos en Kotlin.
 
 ---
 
 ## 📌 Conceptos aplicados
-- **Clases y objetos**: creación de `Libro`, `Revista`, `Biblioteca`.
-- **Constructores e init**: inicialización de objetos en `Material`.
-- **Propiedades con getter y setter**: `paginas` con validación (setter) y `esGrueso` como propiedad calculada (getter).
-- **Herencia y override**: `Libro` y `Revista` heredan de `Material`.
-- **Clases abstractas**: `Material` obliga a implementar el atributo `tipo`.
-- **Interfaces**: `AccionLectura` con el método `leer()`.
-- **Colecciones**: lista mutable de materiales dentro de `Biblioteca`.
+- **Clases abstractas** → `Material` define las propiedades comunes a todos los materiales.
+- **Constructores e init** → se muestra un mensaje cada vez que se crea un material.
+- **Propiedades con getter y setter** → `paginas` valida valores (setter) y `esGrueso` calcula si el material es voluminoso (getter).
+- **Herencia y override** → `Libro` y `Revista` heredan de `Material` y sobrescriben el método `mostrarInfo()`.
+- **Interfaces** → `AccionLectura` define el método `leer()` que implementan tanto el libro como la revista.
 
 ---
+
 
 ## ▶️ Ejecución
 1. Abrir el proyecto en **IntelliJ IDEA**.  
