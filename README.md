@@ -22,9 +22,10 @@ El objetivo es aplicar los conceptos vistos en el laboratorio de Programación O
 ---
 
 ## 📺 Video explicativo
-👉 [Enlace al video](#)  
+👉 [[Enlace al video](https://www.youtube.com/watch?v=wR4zWH7nc9A)](#)  
 
 ---
 
 ## ✨ Autor
 Proyecto desarrollado por **Ronaldo Meza** como ejemplo propio del laboratorio de **POO en Kotlin**.
+
