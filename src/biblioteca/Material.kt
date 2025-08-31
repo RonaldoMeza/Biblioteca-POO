@@ -7,13 +7,13 @@ abstract class Material(
 ) {
     abstract val tipo: String
 
-    // Ejemplo de setter: validar número de páginas
+    // Setter validado
     open var paginas: Int = 0
         set(value) {
             field = if (value < 0) 0 else value
         }
 
-    // Getter calculado: material "grueso" si tiene más de 300 páginas
+    // Getter calculado
     val esGrueso: Boolean
         get() = paginas > 300
 

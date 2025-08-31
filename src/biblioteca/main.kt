@@ -5,6 +5,7 @@ fun main() {
 
     val libro = Libro("L1", "El Principito", autor = "Antoine de Saint-Exupéry")
     libro.paginas = 120
+
     val revista = Revista("R1", "National Geographic", numero = 202)
     revista.paginas = 80
 
@@ -15,6 +16,4 @@ fun main() {
 
     libro.leer()
     revista.leer()
-
-    biblio.prestarMaterial("L1", "Ronaldo", "2025-08-30")
 }
