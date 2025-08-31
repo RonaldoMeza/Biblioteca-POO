@@ -3,7 +3,7 @@ package biblioteca
 // Clase abstracta base
 abstract class Material(
     open val id: String,
-    open var titulo: String
+    open val titulo: String
 ) {
     abstract val tipo: String
 
@@ -18,7 +18,7 @@ abstract class Material(
         get() = paginas > 300
 
     init {
-        println("Se creó el material '$titulo'")
+        println("Se creó el material")
     }
 
     open fun mostrarInfo() {
